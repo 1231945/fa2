@@ -40,9 +40,9 @@ function printSummary() {
     document.getElementById('idO').innerText = "Grade and Section " + id;
     document.getElementById('Order').innerText = "Order: " + service;
     document.getElementById('Quantity').innerText = "Quantity: " + sessions;
-    document.getElementById('subtotal').innerText = "Subtotal: " + subtotal;
-    document.getElementById('discount').innerText = "Discount: " + discount;
-    document.getElementById('total').innerText = "Total: " + (subtotal - discount);
+    document.getElementById('subtotal').innerText = "Subtotal: PHP" + subtotal;
+    document.getElementById('discount').innerText = "Discount: PHP" + discount;
+    document.getElementById('total').innerText = "Total: PHP" + (subtotal - discount);
     document.getElementById('msg').innerText = "Thank you for booking with us!";
 }
 
