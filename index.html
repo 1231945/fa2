@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "script.js"></script>
+</head>
+<body>
+    <h1>Appointment Booking Form</h1>
+    <form onsubmit="printSummary(); return false;"> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="idNumber">ID #:</label>
+        <input type="text" id="id" name="id" required placeholder="NA for regular"><br><br>
+        
+        <label for="service">Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="Dental Check-up (PHP 850)"> Dental Check-up (PHP 850)</option>
+            <option value="Eye Check-up (PHP 900)">Eye Check-up (PHP 900)</option>
+            <option value="Physical Exam (PHP 800)">Physical Exam (PHP 800)</option>
+        </select><br><br>
+        <label for="sessions">Sessions:</label>
+        <input type="number" id="sessions" name="sessions" min="1" max="3" required><br><br>
+
+        <label for="customer">Customer Type:</label>
+        <select id="customer" name="customer" required>
+            <option value="">Select a customer type</option>
+            <option value="Regular">Regular </option>
+            <option value="pwd/senior">PWD/Senior</option>
+        
+        </select><br><br>
+
+        <input type="submit" value="Book Appointment">    
+    </form>
+    <h1>APPOINTMENT SUMMARY</h1>
+    <p id="nameO"></p>
+    <p id="idO"></p>
+    <p id="Order"></p>
+    <p id="Quantity"></p>
+    <p id="subtotal"></p>
+    <p id="discount"></p>
+    <p id="total"></p>
+   <p id ="msg"></p>
+</body>
+</html>
