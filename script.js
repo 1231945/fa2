@@ -30,7 +30,7 @@ function printSummary() {
     const sessions = parseInt(document.getElementById('sessions').value);
     const customer = document.getElementById('customer').value;
 
-    // calculate subtotal and discount
+    // subtotal and discount vars
     const subtotal = calculateSubtotal(service, sessions);
     const discount = calculateDiscount(subtotal, customer);
  
