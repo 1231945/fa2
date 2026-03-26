@@ -1,5 +1,5 @@
 
-// function to calculate subtotal using service and sessions
+// calculate subtotal using service and sessions
 function calculateSubtotal(service, sessions) {
     switch(service) {
         case 'Dental Check-up (PHP 850)':
@@ -13,7 +13,7 @@ function calculateSubtotal(service, sessions) {
     }
 }
 
-// function to calculate discount when applicable
+//calculate discount when applicable
 function calculateDiscount(subtotal, customer) {
     if (customer === "pwd/senior") {
         return subtotal * 0.15;
